@@ -8,7 +8,7 @@ const forecast = (a, b, callback) => {
             console.log(body.error)
             callback("Unable to find weather")
         } else {
-            callback(undefined, body.current.weather_descriptions[0] + ". It is usually " + body.current.temperature + " degrees out. It feels like " + body.current.feelslike + " degrees out. The humidity is " + body.current.humidity)
+            callback(undefined, body.current.weather_descriptions[0] + ". It is usually " + body.current.temperature + " degrees out. It feels like " + body.current.feelslike + " degrees out. The humidity is " + body.current.humidity +'%')
         }
     })
 
